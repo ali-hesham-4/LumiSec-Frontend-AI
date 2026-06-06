@@ -1,0 +1,26 @@
+.add-btn{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF);
+}
+
+@media screen and (max-width: 767px){
+
+    .add-btn{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    .standards-header{
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 16px;
+    }
+
+    .standards-header h1{
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+
+}

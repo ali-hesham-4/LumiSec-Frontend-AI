@@ -1,0 +1,46 @@
+.audit-accordion,
+.audit-accordion:active{
+    background-color: var(--container-background) !important;
+    border: 3px solid #2A3042 !important;
+    color: white !important;
+}
+
+.audit-accordion p{
+    color: #9DA3B0 !important;
+}
+
+.p-btn{
+    background-color: #F79009 !important;
+}
+
+.accordion-icon{
+    color: white;
+    flex-shrink: 0;
+}
+
+.accordion-btn{
+    white-space: normal !important;
+}
+
+@media screen and (max-width: 767px){
+
+    .audit-accordion .card-body{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    .audit-accordion p{
+        font-size: 0.9rem;
+    }
+
+    .accordion-btn{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        font-size: 0.95rem !important;
+    }
+
+}

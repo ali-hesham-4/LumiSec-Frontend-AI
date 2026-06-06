@@ -1,0 +1,110 @@
+.sepration-text::before{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    bottom: 10px;
+    right: 0px;
+    background-color: #1F2937;
+}
+
+.sepration-text::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    bottom: 10px;
+    left: 0px;
+    background-color: #1F2937;
+}
+
+.modal-content{
+    background-color: var(--container-background) !important;
+    border: 3px solid #553399;
+}
+
+.modal-backdrop.show {
+    background-color: rgba(10, 14, 26, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    opacity: 1 !important;
+}
+
+.upload-label{
+    width: 100%;
+    min-height: 180px;
+
+    border: 2px dashed #6c757d;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    background-color: #111827;
+
+    transition: 0.3s;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.upload-label:hover{
+    border-color: #7F56D9;
+    background-color: #1a2235;
+}
+
+.upload-icon{
+    font-size: 40px;
+    color: #7F56D9;
+}
+
+.btn-close{
+    color: white !important;
+}
+
+label{
+    color: #9DA3B0;
+}
+
+.add-btn{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF);
+}
+
+@media screen and (max-width: 767px){
+
+    .modal-dialog{
+        margin: 16px;
+    }
+
+    .upload-label{
+        min-height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    .modal-footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-footer .btn{
+        width: 100%;
+    }
+
+    .sepration-text::before,
+    .sepration-text::after{
+        width: 28%;
+    }
+
+    .upload-label{
+        min-height: 130px;
+        padding: 16px;
+    }
+
+}

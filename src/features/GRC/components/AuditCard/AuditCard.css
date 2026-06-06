@@ -1,0 +1,58 @@
+.audit-card{
+    background-color: var(--container-background);
+    border: 3px solid #2A3042;
+}
+
+.audit-card p{
+    color: #9DA3B0;
+}
+
+.progress,
+.progress-stacked{
+    background-color: #10141F !important;
+    height: 10px;
+}
+
+.progress-bar{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF);
+}
+
+.save-btn{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF);
+}
+
+@media screen and (max-width: 991px){
+
+    .audit-title{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    .audit-card{
+        padding: 16px !important;
+    }
+
+    .audit-title{
+        font-size: 1.1rem;
+    }
+
+    .save-btn{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    .audit-title{
+        font-size: 1rem;
+    }
+
+    .audit-card p{
+        font-size: 0.9rem;
+    }
+
+}

@@ -1,0 +1,32 @@
+.AnalystPerformanceTabel-card{
+    background-color: var(--container-background);
+    border: 3px solid #2A3042;
+}
+
+
+table.AnalystPerformanceTabel th{
+    color: #9DA3B0;
+    padding: 20px 10px;
+    text-align: start;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+table.AnalystPerformanceTabel td{
+    color: white;
+    text-align: start;
+    padding: 20px 10px;
+    border-top: 1px solid #2A3042;
+    font-size: 0.8rem;
+}
+
+.AnalystPerformanceTabel-view-all{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+

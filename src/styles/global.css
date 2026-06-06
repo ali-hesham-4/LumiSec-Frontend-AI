@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.w-35{
+    width: 35%;
+}
+
+.w-4{
+    width: 4%;
+}

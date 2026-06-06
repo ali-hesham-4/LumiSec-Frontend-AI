@@ -1,0 +1,86 @@
+.dashboard-card{
+    background-color: var(--container-background);
+    border: 3px solid #2A3042;
+}
+
+.dashboard-card p{
+    color: #9DA3B0;
+}
+
+.dashboard-card i{
+    color: #3B82F6;
+}
+
+.down{
+    color: red;
+}
+
+.up{
+    color: green;
+}
+
+.chart-container{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pie-chart-container{
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+}
+
+@media screen and (max-width: 991px){
+
+    .chart-container{
+        height: 350px;
+    }
+
+    .pie-chart-container{
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    .chart-container{
+        height: 300px;
+    }
+
+    .pie-chart-container{
+        height: 260px;
+    }
+
+    .Statistics{
+        font-size: 1.2rem;
+    }
+
+    .dashboard-card p{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    .dashboard-card{
+        padding: 16px !important;
+    }
+
+    .dashboard-card-image{
+        width: 45px;
+        min-width: 45px;
+    }
+
+    .chart-container{
+        height: 250px;
+    }
+
+    .pie-chart-container{
+        height: 220px;
+    }
+
+}

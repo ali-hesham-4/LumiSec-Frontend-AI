@@ -1,0 +1,12 @@
+.nav{
+    border-bottom: 1px solid #2A3042;
+}
+
+ul.nav .nav-link , ul.nav .nav-link:hover , ul.nav .nav-link:active {
+    color: #9DA3B0;
+}
+
+ul.nav .nav-link.active{
+    color: #539BFF !important;
+    border-bottom: 1px solid #539BFF;
+}

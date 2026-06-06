@@ -1,0 +1,55 @@
+table.RemedationTabel{
+    background-color: var(--container-background);
+}
+
+
+table.RemedationTabel th{
+    background-color: #252B3A;
+    color: #9DA3B0;
+    padding: 20px 10px;
+    text-align: start;
+    font-size: 0.8rem;
+}
+
+table.RemedationTabel td{
+    color: white;
+    text-align: start;
+    padding: 20px 10px;
+    border-top: 1px solid #2A3042;
+    font-size: 0.8rem;
+}
+
+.risk-td{
+    width: 10%;
+}
+
+.risk-td p{
+    display: inline-block;
+    width: auto;
+    min-width: 80px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.risk-td.high p{
+    background-color: #2E212C;
+    color: #D92D20;
+}
+
+.risk-td.meduim p{
+    background-color: #312B2A;
+    color: #F79009;
+}
+
+.risk-td.low p{
+    background-color: #202C42;
+    color: #539BFF;
+}
+
+.risk-td.green p{
+    background-color: #182C33;
+    color: #059669;
+}

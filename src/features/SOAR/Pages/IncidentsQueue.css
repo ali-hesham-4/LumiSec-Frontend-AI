@@ -1,0 +1,53 @@
+.dashboard-container {
+  min-height: 100vh;
+  color: white;
+}
+
+.dashboard-card {
+  background-color: var(--container-background);
+
+
+  border: 1px solid rgba(255,255,255,.05);
+
+  border-radius: 12px;
+
+  padding: 16px;
+
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+
+.stats-card {
+  height: 130px;
+}
+
+.side-card {
+  min-height: 160px;
+}
+
+.card-title-small {
+  color: #8f9bb8;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.custom-table {
+  margin-bottom: 0;
+}
+
+.custom-table thead th {
+  color: #8f9bb8;
+  border-bottom: 1px solid #2f4669;
+}
+
+.custom-table td {
+  border-color: #2f4669;
+}
+
+.progress {
+  background: #1b2842;
+  height: 8px;
+}
+
+.progress-bar {
+  background: #8d4cff;
+}

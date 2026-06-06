@@ -1,0 +1,53 @@
+{
+    "stats": [
+      {
+        "id": 1,
+        "title": "ACTIVE THREATS",
+        "value": "1402",
+        "change": "+14% Intensity Flux",
+        "type": "danger"
+      },
+      {
+        "id": 2,
+        "title": "CRITICAL NODES",
+        "value": "05",
+        "change": "High Value Assets At Risk",
+        "type": "danger"
+      },
+      {
+        "id": 3,
+        "title": "AVG. MTTR",
+        "value": "42m",
+        "change": "5m Improvement",
+        "type": "success"
+      },
+      {
+        "id": 4,
+        "title": "AUTOMATION ROI",
+        "value": "$12.4k",
+        "change": "Estimated Resource Savings",
+        "type": "success"
+      }
+    ],
+  
+    "findings": [
+      {
+        "id": 1,
+        "controlId": "A.6.1.2",
+        "finding": "Segregation of duties not enforced for finance system admins.",
+        "risk": "High",
+        "assignedTo": "Mohamed Atef",
+        "dueDate": "2025-11-15",
+        "status": "In Progress"
+      },
+      {
+        "id": 2,
+        "controlId": "A.9.2.3",
+        "finding": "Access reviews not performed quarterly as per policy.",
+        "risk": "Medium",
+        "assignedTo": "Ahmed Nabil",
+        "dueDate": "2025-11-10",
+        "status": "Open"
+      }
+    ]
+  }

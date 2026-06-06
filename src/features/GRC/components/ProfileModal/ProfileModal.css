@@ -1,0 +1,45 @@
+.profile{
+    background-color: var(--container-background);
+    border: 3px solid #553399;
+    width: 50%;
+}
+
+label{
+    color: #9DA3B0;
+}
+
+input{
+    background-color: #10141F !important;
+    color: white !important;
+}
+
+input::placeholder {
+    color: white !important;
+}
+
+hr{
+    background-color: #2A3042;
+    height: 3px;
+}
+
+.save-btn{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF);
+}
+
+
+@media (max-width: 992px){
+    .profile{
+        width: 75%;
+    }
+}
+
+/* mobile */
+@media (max-width: 576px){
+    .profile{
+        width: 100%;
+    }
+
+    input{
+        font-size: 0.9rem;
+    }
+}

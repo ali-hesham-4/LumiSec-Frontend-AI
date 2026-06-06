@@ -1,0 +1,63 @@
+.standards-card{
+    background-color: var(--container-background);
+    border: 3px solid #2A3042;
+    height: 100%;
+}
+
+.standards-card p{
+    color: #9DA3B0;
+}
+
+.progress,
+.progress-stacked{
+    background-color: #10141F !important;
+    height: 12px !important;
+}
+
+.progress-bar{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF);
+}
+
+.hr-line{
+    background-color: #2A3042;
+    height: 3px;
+}
+
+.standards-type{
+    min-width: fit-content;
+}
+
+/*  Media Query */
+
+@media screen and (max-width: 991px){
+
+    .standards-card-title{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    .standards-card{
+        padding-bottom: 8px;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    .standards-card p{
+        font-size: 0.9rem;
+    }
+
+    .standards-card-title{
+        font-size: 0.95rem;
+    }
+
+    .standards-type{
+        font-size: 0.8rem;
+        padding: 6px 10px !important;
+    }
+
+}

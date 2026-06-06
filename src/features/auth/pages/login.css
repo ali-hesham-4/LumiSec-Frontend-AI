@@ -1,0 +1,140 @@
+@import url(../../../styles/variables.css);
+
+.login-body{
+    background-image: url("../../../assets/background.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.colred-text{
+    background: linear-gradient(90deg , #EF4444 , #818CF8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.dark-background{
+    background-color: #111827b5;
+    border: 2px solid #1F2937;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.form-background{
+    background-color: #0B0E15;
+}
+
+.input-field{
+    background-color: #1F2937 !important;
+    border: 1px solid #374151 !important;
+    color: white !important;
+}
+
+.input-field::placeholder {
+    color: #9CA3AF !important;
+}
+
+.checkbox-input{
+    width: 20px;
+    height: 20px;
+}
+
+.rememberMe-label{
+    color: #D1D5DB
+}
+
+.sign-in-btn{
+    background-color: #DC2626;
+}
+
+.sepration-text::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 10px;
+    right: 0px;
+    background-color: #1F2937;
+}
+
+.sepration-text::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 10px;
+    left: 0px;
+    background-color: #1F2937;
+}
+
+.text-purple{
+    color: var(--light-purple);
+}
+
+.bg-sso-btn{
+    background-color: #1F2937;
+    border: 1px solid #374151;
+}
+
+.login-form{
+    border: 3px solid #8A2BE2;
+}
+
+/*  Media Query */
+
+
+@media (max-width: 992px) {
+.login-body .row {
+    flex-direction: column;
+    height: auto !important;
+}
+
+.login-body .col-6 {
+    width: 100%;
+    max-width: 100%;
+}
+
+.login-body .container {
+    padding: 20px;
+}
+
+.login-body .w-75,
+.login-body .w-50,
+.login-body .w-35 {
+    width: 100% !important;
+}
+
+.login-body figure {
+    width: 80px !important;
+}
+
+.login-form {
+    margin-top: 30px;
+}
+}
+
+
+@media (max-width: 576px) {
+.login-body h1 {
+    font-size: 24px;
+}
+
+.login-body h2 {
+    font-size: 20px;
+}
+
+.login-body p {
+    font-size: 14px;
+}
+
+.login-form {
+    padding: 15px !important;
+}
+
+.sign-in-btn,
+.bg-sso-btn {
+    font-size: 14px;
+}
+}
+

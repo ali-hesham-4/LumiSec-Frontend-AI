@@ -30,17 +30,24 @@ export default function LandingPagesList() {
 
       <div className="dashboard-card p-0">
         <table className="w-100 discover-tabel">
-          <thead><tr><th>Name</th><th>URL</th><th>Category</th><th>Actions</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>URL</th>
+              <th>Category</th>
+              <th>Actions</th>
+              </tr>
+          </thead>
           <tbody>
             {pages.map((p) => (
               <tr key={p.id}>
-                <td className="text-white">{p.name}</td>
+                <td className="text-white p-2">{p.name}</td>
                 <td className="text-secondary">{p.url}</td>
-                <td>{p.category}</td>
+                <td className="text-secondary">{p.category}</td>
                 <td>
-                  <Link to={`/Phishing/LandingPages/${p.id}/edit`} className="btn btn-sm integration-btn me-1">Edit</Link>
+                  <Link to={`/Phishing/LandingPages/${p.id}/edit`} className="btn btn-sm import-btn text-white me-1">Edit</Link>
                   <RoleGate allow={canEditTemplates}>
-                    <button type="button" className="btn btn-sm integration-btn" onClick={() => handleDelete(p.id)}>Delete</button>
+                    <button type="button" className="btn btn-sm import-btn text-danger" onClick={() => handleDelete(p.id)}>Delete</button>
                   </RoleGate>
                 </td>
               </tr>

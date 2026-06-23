@@ -48,14 +48,14 @@ export default function PhishingIntegrationActions({ campaign, compact = false }
           <button
             key={action.key}
             type="button"
-            className="btn integration-btn"
+            className="btn import-btn text-white border-0 me-3"
             disabled={loadingKey !== null}
             onClick={() => handleAction(action)}
           >
             {loadingKey === action.key ? (
               <i className="fa-solid fa-spinner fa-spin me-1" />
             ) : (
-              <i className={`fa-solid ${action.icon} me-1`} />
+              <i className={`fa-solid text-white ${action.icon} me-1`} />
             )}
             {!compact && action.label}
           </button>

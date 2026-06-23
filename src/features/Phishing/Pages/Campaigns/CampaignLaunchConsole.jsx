@@ -49,7 +49,7 @@ export default function CampaignLaunchConsole() {
             <h5 className="text-white">Launch Console — {campaign?.name}</h5>
             <p className="dashboard-desc">Email queue worker & live monitoring</p>
           </div>
-          <Link to={`/Phishing/Campaigns/${id}`} className="btn integration-btn">Back to Details</Link>
+          <Link to={`/Phishing/Campaigns/${id}`} className="btn import-btn text-white">Back to Details</Link>
         </div>
 
         <PhishingAlert type="danger" message={error || actionError} isMock={isMock} />
@@ -68,12 +68,12 @@ export default function CampaignLaunchConsole() {
 
             <div className="d-flex gap-2 mt-3 flex-wrap">
               <button type="button" className="btn add-btn text-white border-0" disabled={launching} onClick={handleLaunch}>
-                {launching ? <i className="fa-solid fa-spinner fa-spin me-1" /> : <i className="fa-solid fa-play me-1" />}
+                {launching ? <i className="fa-solid fa-spinner fa-spin me-1" /> : <i className="fa-solid text-white fa-play me-1" />}
                 Launch Campaign
               </button>
-              <button type="button" className="btn integration-btn" onClick={() => pauseCampaign(id)}>Pause</button>
-              <button type="button" className="btn integration-btn" onClick={() => resumeCampaign(id)}>Resume</button>
-              <button type="button" className="btn integration-btn text-danger" onClick={() => stopCampaign(id)}>Stop</button>
+              <button type="button" className="btn btn-warning text-dark" onClick={() => pauseCampaign(id)}>Pause</button>
+              <button type="button" className="btn btn-success text-white" onClick={() => resumeCampaign(id)}>Resume</button>
+              <button type="button" className="btn btn-danger text-white" onClick={() => stopCampaign(id)}>Stop</button>
             </div>
 
             <div className="launch-console-log mt-3">

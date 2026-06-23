@@ -34,26 +34,26 @@ export default function CampaignList() {
             <tr>
               <th>Name</th>
               <th>Status</th>
-              <th>Sent</th>
-              <th>Opened</th>
-              <th>Clicked</th>
-              <th>Submitted</th>
+              <th className="text-center">Sent</th>
+              <th className="text-center">Opened</th>
+              <th className="text-center">Clicked</th>
+              <th className="text-center">Submitted</th>
               <th>Actions</th>
             </tr>
           </thead>
           <tbody>
             {campaigns.map((c) => (
               <tr key={c.id}>
-                <td className="text-white fw-medium">{c.name}</td>
+                <td className="text-white fw-medium p-2">{c.name}</td>
                 <td><span className="badge text-capitalize">{c.status}</span></td>
-                <td>{c.sent}</td>
-                <td>{c.opened}</td>
-                <td>{c.clicked}</td>
-                <td className={c.submitted > 10 ? "text-danger fw-bold" : ""}>{c.submitted}</td>
+                <td className="text-white text-center">{c.sent}</td>
+                <td className="purple-number text-center">{c.opened}</td>
+                <td className="orange-number text-center">{c.clicked}</td>
+                <td className={c.submitted > 10 ? "text-danger fw-bold text-center" : ""}>{c.submitted}</td>
                 <td>
-                  <Link to={`/Phishing/Campaigns/${c.id}`} className="btn btn-sm integration-btn me-1">Details</Link>
+                  <Link to={`/Phishing/Campaigns/${c.id}`} className="btn btn-danger btn-sm integration-btn me-1">Details</Link>
                   {c.status === "active" && (
-                    <Link to={`/Phishing/Campaigns/${c.id}/launch`} className="btn btn-sm integration-btn">Console</Link>
+                    <Link to={`/Phishing/Campaigns/${c.id}/launch`} className="btn btn-secondary btn-sm integration-btn ms-2">Console</Link>
                   )}
                 </td>
               </tr>

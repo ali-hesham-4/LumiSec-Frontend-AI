@@ -1,0 +1,161 @@
+.desc-header{
+    color: #AAAAAA;
+}
+
+
+.save-soar-btn{
+    border: 3px solid #3E3E3E !important;
+}
+
+
+.run-soar-btn{
+    background-color: #EA8841 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.activate-soar-btn{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.soar-btns{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF) !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 0 !important;
+}
+
+.soar-btns-icon{
+    background-color: #b8b7b799;
+    padding: 4px 4px;
+}
+
+.soar-btns-icon-orange{
+    background-color: #E67E22;
+    padding: 5px 12px;
+}
+
+
+.soar-btns-icon-red{
+    background-color: #E01E5A;
+    padding: 4px 2px;
+}
+
+
+.soar-btns-icon-blue{
+    background-color: #0984E3;
+    padding: 4px 12px;
+}
+
+
+.soar-headers{
+    background: linear-gradient(90deg , #7F56D9 , #539BFF) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    border-bottom: 2px solid #3E3E3E !important;
+    padding-bottom: 5px !important;
+}
+
+
+.actions-sidebar{
+    width: 260px;
+    min-width: 260px;
+    overflow: hidden;
+    position: sticky;
+    top: 70px;
+
+    height: calc(100vh - 70px);
+    background-image: url("../../../assets/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right: 2px solid #2A3042;
+
+    padding: 20px 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.actions-sidebar:hover{
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #606060 transparent;
+}
+
+
+.actions-sidebar::-webkit-scrollbar{
+    width: 8px;
+}
+
+.actions-sidebar::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.actions-sidebar::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 100px;
+}
+
+.actions-sidebar:hover::-webkit-scrollbar-thumb{
+    background: #606060;
+}
+
+.actions-sidebar::-webkit-scrollbar-thumb:hover{
+    background: #909090;
+}
+
+
+.text-gray{
+    color: #AAAAAA;
+}
+
+.NodeConfiguration{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3E3E3E !important;
+}
+
+
+.horizontalLine{
+    border-bottom: 2px solid #3E3E3E !important;
+}
+
+
+.react-flow__minimap {
+    background: #111827 !important;
+    border: 1px solid #2d3748 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+  }
+  
+  .react-flow__minimap svg {
+    background: #111827 !important;
+  }
+
+
+
+  .react-flow__controls {
+    background: #111827 !important;
+    border: 1px solid #374151 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+  }
+  
+  .react-flow__controls button {
+    background: #111827 !important;
+    color: white !important;
+    border-bottom: 1px solid #374151 !important;
+    transition: .2s;
+  }
+  
+  .react-flow__controls button:hover {
+    background: #1f2937 !important;
+  }
+  
+  .react-flow__controls button svg {
+    fill: white !important;
+  }

@@ -16,4 +16,71 @@
     background: linear-gradient(90deg , #7F56D9 , #539BFF)
 }
 
+.sidebar-offcanvas{
+    top: 70px !important;
+    height: stretch;
+}
+
+.sidebar.soar{
+    width: 260px;
+    min-width: 260px;
+    overflow: hidden;
+    position: sticky;
+    top: 70px;
+
+    height: calc(100vh - 70px);
+
+    background-image: url("../../../assets/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right: 2px solid #2A3042;
+
+    padding: 20px 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.sidebar.soar:hover{
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #606060 transparent;
+}
+
+/* collapsed like YouTube */
+.sidebar.collapsed{
+    width: 80px;
+    min-width: 80px;
+}
+
+.sidebar.collapsed:hover{
+    width: 95px;
+    min-width: 95px;
+}
+
+
+.sidebar.soar::-webkit-scrollbar{
+    width: 8px;
+}
+
+.sidebar.soar::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.sidebar.soar::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 100px;
+}
+
+.sidebar.soar:hover::-webkit-scrollbar-thumb{
+    background: #606060;
+}
+
+.sidebar.soar::-webkit-scrollbar-thumb:hover{
+    background: #909090;
+}
+
+
 

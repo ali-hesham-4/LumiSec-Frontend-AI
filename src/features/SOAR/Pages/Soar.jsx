@@ -31,7 +31,7 @@ export default function Soar() {
                 
                 <aside className='d-none d-lg-block'>
                 
-                            <div className={collapsed ? "sidebar collapsed" : "sidebar"}>
+                            <div className={collapsed ? "sidebar soar collapsed" : "sidebar soar"}>
                 
                                 <SidebarLinks collapsed={collapsed} />
                 
@@ -72,10 +72,10 @@ export function SidebarLinks({ collapsed }) {
     return (
         <nav className='d-flex flex-column gap-2'>
 
-            <NavItem to="/Soar" icon={<i class="fa-solid fa-chart-pie"></i>} text="Analytics & Reports" collapsed={collapsed} />
-            <NavItem to="/Soar/IncidentsQueue" icon={<i class="fa-solid fa-screwdriver-wrench"></i>} text="Incidents Queue" collapsed={collapsed} />
-            <NavItem to="/Soar/IncidentManagement" icon={<TriangleAlert size={22} />} text="Incident Management" collapsed={collapsed} />
-            <NavItem to="/Soar/settings" icon={<SettingsIcon size={22} />} text="Settings" collapsed={collapsed} />
+            <NavItem to="/SoarDashboard" icon={<i class="fa-solid fa-chart-pie"></i>} text="Analytics & Reports" collapsed={collapsed} />
+            <NavItem to="/SoarDashboard/IncidentsQueue" icon={<i class="fa-solid fa-screwdriver-wrench"></i>} text="Incidents Queue" collapsed={collapsed} />
+            <NavItem to="/SoarDashboard/IncidentManagement" icon={<TriangleAlert size={22} />} text="Incident Management" collapsed={collapsed} />
+            <NavItem to="/SoarDashboard/settings" icon={<SettingsIcon size={22} />} text="Settings" collapsed={collapsed} />
 
 
         </nav>
@@ -87,7 +87,7 @@ function NavItem({ to, icon, text, collapsed }) {
     return (
         <NavLink
             to={to}
-            end={to === "/Soar"}
+            end={to === "/SoarDashboard"}
             className={({ isActive }) =>
                 isActive ? "sidebar-link active" : "sidebar-link"
             }

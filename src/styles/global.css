@@ -26,3 +26,8 @@ body {
 .w-fit-content{
     width: fit-content;
 }
+
+
+.w-15{
+    width: 15%;
+}
